@@ -28,9 +28,9 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtGrp = New System.Windows.Forms.TextBox()
         Me.grpBadgeType = New System.Windows.Forms.GroupBox()
-        Me.radConSpr = New System.Windows.Forms.RadioButton()
-        Me.radConAuto = New System.Windows.Forms.RadioButton()
         Me.radCon = New System.Windows.Forms.RadioButton()
+        Me.radConAuto = New System.Windows.Forms.RadioButton()
+        Me.radConSpr = New System.Windows.Forms.RadioButton()
         Me.lblReg = New System.Windows.Forms.Label()
         Me.lblCost = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
@@ -73,6 +73,7 @@ Partial Class Form1
         '
         'txtGrp
         '
+        Me.txtGrp.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtGrp.ForeColor = System.Drawing.Color.OrangeRed
         Me.txtGrp.Location = New System.Drawing.Point(304, 275)
         Me.txtGrp.Multiline = True
@@ -95,18 +96,16 @@ Partial Class Form1
         Me.grpBadgeType.TabStop = False
         Me.grpBadgeType.Text = "Select Badge Type:"
         '
-        'radConSpr
+        'radCon
         '
-        Me.radConSpr.AutoSize = True
-        Me.radConSpr.Checked = True
-        Me.radConSpr.Font = New System.Drawing.Font("Broadway", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radConSpr.Location = New System.Drawing.Point(7, 22)
-        Me.radConSpr.Name = "radConSpr"
-        Me.radConSpr.Size = New System.Drawing.Size(357, 24)
-        Me.radConSpr.TabIndex = 0
-        Me.radConSpr.TabStop = True
-        Me.radConSpr.Text = "Convention + Superhero Experience"
-        Me.radConSpr.UseVisualStyleBackColor = True
+        Me.radCon.AutoSize = True
+        Me.radCon.Font = New System.Drawing.Font("Broadway", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radCon.Location = New System.Drawing.Point(7, 76)
+        Me.radCon.Name = "radCon"
+        Me.radCon.Size = New System.Drawing.Size(135, 24)
+        Me.radCon.TabIndex = 2
+        Me.radCon.Text = "Convention"
+        Me.radCon.UseVisualStyleBackColor = True
         '
         'radConAuto
         '
@@ -119,16 +118,18 @@ Partial Class Form1
         Me.radConAuto.Text = "Convention + Autographs"
         Me.radConAuto.UseVisualStyleBackColor = True
         '
-        'radCon
+        'radConSpr
         '
-        Me.radCon.AutoSize = True
-        Me.radCon.Font = New System.Drawing.Font("Broadway", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radCon.Location = New System.Drawing.Point(7, 76)
-        Me.radCon.Name = "radCon"
-        Me.radCon.Size = New System.Drawing.Size(135, 24)
-        Me.radCon.TabIndex = 2
-        Me.radCon.Text = "Convention"
-        Me.radCon.UseVisualStyleBackColor = True
+        Me.radConSpr.AutoSize = True
+        Me.radConSpr.Checked = True
+        Me.radConSpr.Font = New System.Drawing.Font("Broadway", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radConSpr.Location = New System.Drawing.Point(7, 22)
+        Me.radConSpr.Name = "radConSpr"
+        Me.radConSpr.Size = New System.Drawing.Size(357, 24)
+        Me.radConSpr.TabIndex = 0
+        Me.radConSpr.TabStop = True
+        Me.radConSpr.Text = "Convention + Superhero Experience"
+        Me.radConSpr.UseVisualStyleBackColor = True
         '
         'lblReg
         '
